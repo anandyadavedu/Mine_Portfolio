@@ -1,0 +1,123 @@
+<section>
+    <div class="container-fluid home">
+        <div class="row mt-10">
+            <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 ">
+                <div class="name">
+                    <h4 class="first">Hello It's Me <h1>Anand Yadav</h1>
+                    </h4>
+                    <h4>And I'm a </h4>
+                    <div #wordContainer class="word-container">{{ words[0] }}</div>
+
+                    <p>I'm a passionate and innovative full stack developer with a strong foundation in both front-end
+                        and back-end technologies. With a keen eye for design and a knack for problem-solving,
+                        I craft robust, user-friendly web applications that leave a lasting impression.
+                    </p>
+
+                    <div class="resume-btn d-flex justify-content-center">
+                        <a href="assets/Images/Resume.pdf" target="_blank"><button class="btn btn-success">My
+                                Resume</button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                <div class="image">
+                    <img id="frontimage" src="/assets/Images/3.jpg" alt="No Image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="all-section">
+        <app-about></app-about>
+        <app-skills></app-skills>
+        <app-projects></app-projects>
+        <app-contact></app-contact>
+
+    </div>
+</section>
+
+
+<!----------------------------------- footer section start  --------------------------- -->
+
+<footer>
+    <div class="container-fluid footer-container">
+        <div class="footer-page">
+
+            <div class="main">
+
+                <div class="image">
+                    <img src="assets/Images/pic.jpg" alt="">
+                    <div class="footer-Name mt-3">
+                        <h3 class="brand-name">Er. Anand <span class="Footer-Yadav">Yadav</span></h3>
+                    </div>
+                </div>
+                
+
+                <!------------------------ Quick Link Start----------------------------->
+
+                <div class="link">
+                    <div class="quick-link">
+                        <h4>Quick Links</h4>
+                    </div>
+                    <div class="footer-link">
+
+                      
+                        <a routerLink="/home" routerLinkActive="active">  <i class="fa-solid fa-arrow-right"></i> Home</a>
+                      
+                        <a routerLink="/about" routerLinkActive="active">  <i class="fa-solid fa-arrow-right"></i> About</a>
+                       
+
+                        <a routerLink="/skills" routerLinkActive="active">  <i class="fa-solid fa-arrow-right"></i> Skills</a>
+                       
+                        <a routerLink="/projects" routerLinkActive="active">  <i class="fa-solid fa-arrow-right"></i> Projects</a>
+                      
+                        <a routerLink="/contact" routerLinkActive="active">  <i class="fa-solid fa-arrow-right"></i> Contact</a>
+
+                    </div>
+                </div>
+                <!------------------------ Quick Link End----------------------------->
+
+                <!------------------------ Social Link Start----------------------------->
+
+                <div class="social-link">
+                    <div class="connect-us">
+                        <h4>Connect with me</h4>
+                        <div class="social-media">
+
+                            <div class="footer-icons">
+                                <a href="" class="icon-link">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                    <span class="icon-name">Instagram</span>
+                                </a>
+                                <a href="" class="icon-link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <span  class="icon-name">Facebook</span>
+                                </a>
+                                <a href="" class="icon-link" >
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <span  class="icon-name">LinkedIn</span>
+                                </a>
+                                <a href="" class="icon-link" >
+                                    <i class="fa-brands fa-github"></i>
+                                    <span  class="icon-name">GitHub</span>
+                                </a>
+                                <div class="footer-contact">
+                                    <p><i class="fa-solid fa-arrow-right"></i>Contact: +91- 9889366056</p>
+                                    <p><i class="fa-solid fa-arrow-right"></i>Email: anandyadavedu<span>&#64;</span>gmail.com</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------ Social Link End----------------------------->
+
+            </div>
+        </div>
+    </div>
+</footer>

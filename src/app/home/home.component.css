@@ -1,0 +1,236 @@
+
+.home{
+    margin-top: 24px;
+    margin-bottom: 25px;
+    background-color: rgb(6, 6, 6);
+    color: white;
+    text-decoration: none;
+}
+.row{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+.name{
+    margin-top: 120px;
+    /* margin-left: 75px; */
+    
+    
+}
+.name p{
+  font-size: 17px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#frontimage{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.word-container {
+    font-size: 35px;
+    font-weight: bold;
+    color: #05c7f7;
+    /* color: chocolate; */
+    text-size-adjust: 0.58;
+    text-shadow: 2px 3px rgb(255, 8, 8);
+    opacity: 0;
+    animation: showWord 2s ease 2s infinite;
+  }
+
+.all-section{
+  margin-bottom: 50px;
+}
+
+.all-section  .footer{
+  display: none;
+}
+
+.main .image{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.Footer-Yadav{
+  color: aqua;
+}
+.image h3{
+  color: aliceblue;
+}
+
+.footer-link a{
+  transition: .5s;
+  padding: 5px 5px;
+}
+
+.footer-link .fa-solid{
+  color: chocolate;
+}
+
+.footer-link a:hover{
+
+  translate: 20px 0 ;
+
+}
+
+.connect-us h4{
+  color: aliceblue;
+
+}
+.social-title-name{
+  font-size: 16px;
+
+}
+
+
+
+.icon-link {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.icon-name {
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
+.fa-brands{
+  font-size: 50px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 10px;
+  color: ghostwhite;
+}
+
+.icon-link:hover .icon-name {
+  display: block;
+  font-size: 17px;
+  top: -30px;
+}
+.footer-contact p{
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.brand-name{
+  animation: footer-brand 2s infinite;
+}
+
+
+
+
+
+
+@media(max-width:768px){
+  .name{
+    margin-top: 20px;
+  }
+  .word-container{
+    font-size: 26px;
+  }
+  .name p{
+    font-size: 14px;
+  }
+
+}
+@media (min-width:767.99px) and (max-width:991.99px){
+  .main .image img {
+    width: 110px;
+    border-radius: 50%;
+    height: 110px;
+    border: 2px solid #04faec;
+  }
+  .image h3 {
+    color: aliceblue;
+    font-size: 20px;
+  }
+  .quick-link h4, .connect-us h4 {
+    color: aliceblue;
+    font-size: 20px;
+  }
+  .footer-link a{
+    font-size: 14px;
+    transition: .5s;
+    padding: 5px 5px;
+  }
+  .social-media .footer-icons{
+    display: flex;
+    flex-direction: row;
+   
+    font-size: 36px;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+  }
+  .fa-brands{
+    font-size: 35px;
+  }
+  .footer-contact p{
+    font-size: 14px;
+  }
+
+}
+
+@media(max-width:650px){
+  .footer-page{
+    padding: 0px 0px;
+  }
+  .main .image img{
+    width: 90px;
+    height: 90px;
+   
+  }
+  .social-link{
+    margin-left: 0px;
+  }
+  .footer-contact p{
+    font-size: 12px;
+  }
+  .fa-brands{
+    font-size: 32px;
+  }
+}
+
+
+
+
+
+  
+@keyframes showWord {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+   
+}
+
+@keyframes footer-brand{
+  0%{
+    scale: 1;
+  }
+  50%{
+    scale: 1.08;
+  }
+  100%{
+    scale: 1;
+  }
+}
+  

@@ -1,0 +1,88 @@
+<section >
+    <div  class="contact">
+      <div class="content">
+        <p>Contact Us</p>
+        
+      </div>
+
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+              <!-- <div class="address">
+                <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+                  <mat-icon>home</mat-icon>
+                </button>
+              </div> -->
+              <div class="left mt-4">
+                <div class="phone">
+                  <p><i class="fa-solid fa-phone"></i>Phone: +91-9889366056</p>
+                </div>
+                <div class="email">
+                 <p><i class="fa-solid fa-envelope"></i>Email: anandyadavedu<span>&#64;</span>gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <div class="heading">
+                      <p>You can connect with me through...... </p>
+                    </div>
+                    <div class="icons">
+                      <a href="" class="icon-link">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <span class="icon-name">Instagram</span>
+                      </a>
+                      <a href="" class="icon-link">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span  class="icon-name">Facebook</span>
+                      </a>
+                      <a href="" class="icon-link" >
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span  class="icon-name">LinkedIn</span>
+                      </a>
+                      <a href="" class="icon-link" >
+                        <i class="fa-brands fa-github"></i>
+                         <span  class="icon-name">GitHub</span>
+                      </a>
+                      <!-- <a href=""><img src="/assets/Images/leetcode.png" alt="LeetCode" class="leetcode"></a> -->
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+              <div class="form" [formGroup]="form">
+                <div class="form-group">
+                  <label for="" class="form-label">Full Name</label>
+                  <input type="text" id="fullName" formControlName="fullName" class="form-control" placeholder="Enter Full Name">
+                  <div *ngIf="form.get('fullName')?.hasError('required') && form.get('fullName')?.touched" class="error-message">
+                    Full Name is required.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="" class="form-label">Enter Email</label>
+                  <input type="text" id="email" formControlName="email" class="form-control" placeholder="Enter Your Email">
+                  <div *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched" class="error-message">
+                    Email is required.
+                  </div>
+                  <div *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched" class="error-message">
+                    Invalid email format.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="" class="form-label">Enter Massage</label>
+                  <input type="text" class="form-control massage" placeholder="Enter Massage">
+                  
+                </div>
+                <div class="button">
+                  <div type="Submit" class="btn btn-success" (click)="showAlert()">Submit</div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+</section>
+

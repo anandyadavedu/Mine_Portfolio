@@ -1,0 +1,114 @@
+.navbar{
+   
+    background-color: #1f66ac;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    bottom: 90%;
+    height: 60px;
+   
+}
+.container-fluid{
+   margin-right: 50px;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand{
+  color: #fff; 
+}
+
+
+
+#name{
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 30px;
+    text-shadow: 2px 3px black;
+    
+}
+
+#yadav{
+    color: rgb(247 6 34);
+    text-shadow: 2px 3px rgb(12, 203, 233);
+}
+
+#navbarNav{
+    justify-content: end;
+    font-size: 22px;
+    font-weight: 500;
+    text-shadow: 2px 3px rgb(2, 2, 2)
+}
+
+.navbar-nav{
+    gap: 1.5rem;
+    /* margin-right: 35px */
+}
+.navbar-toggler{
+    background-color: white;
+    margin-top: 12px;
+    margin-right: 12px
+}
+
+.nav-link{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    text-decoration: none;
+}
+
+
+
+.nav-link:hover{
+    background-color: rgb(3, 248, 248);
+    transform: rotateY(180deg);
+    transform: scaleX(1.2);
+    border-radius: 20px;
+
+}
+li a.active{
+    text-decoration: none;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 2px;
+
+
+}
+.navbar-brand{
+    animation: brand-name 2s infinite;
+}
+
+.router{
+    margin-top: 60px;
+}
+
+
+@media (min-width: 300px) {
+    .navbar-brand {
+      font-size: 18px;
+    }
+    li a.active{
+        text-decoration: none;
+        /* border-bottom: 2px solid #ff0000; */
+
+    }
+}
+@media (max-width: 991px) {
+    .navbar-toggler {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+}
+
+
+
+@keyframes brand-name {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

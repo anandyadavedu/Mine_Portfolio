@@ -1,0 +1,227 @@
+.container-fluid{
+   /* background-color: black; */
+    margin-bottom: 25px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container{
+    padding: 20px 10px 30px 10px;
+}
+
+.title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    text-wrap: nowrap;
+  
+    background: #5de3df;
+    /* text-shadow: 2px 3px black; */
+    /* background-color: lightseagreen; */
+}
+
+.title::after{
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 5px;
+    bottom: 0px;
+    background: #e30606;
+    -webkit-animation: title 5s infinite linear;
+    animation: title 5s infinite linear;
+}
+.row{
+    margin-top: 20px;
+}
+
+.image{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    margin-left: 10px;
+}
+.name-title{
+    margin: 20px 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.name-title h2{
+    color: chocolate;
+    font-weight: 600;
+
+}
+
+.content-title p{
+    margin: 10px 10px;
+    /* padding: 10px 10px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* Education section start  */
+/* Education section start  */
+/* Education section start  */
+
+
+.title-heading{
+    /* font-size: 25px;
+    font-weight: 600;
+    font-family: helvetica;
+    color: #11a372; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 20px 30px;
+}
+
+.title-heading::after{
+    position: absolute;
+    content: "";
+    width: 130px;
+    height: 5px;
+    bottom: 0px;
+    top: 52%;
+    background: #e30606;
+    -webkit-animation: title 5s infinite linear;
+    animation: title 5s infinite linear;
+}
+.title-heading h2{
+ 
+    font-size: 30px;
+    font-weight: 600;
+    font-family: helvetica;
+    color: #11a372;
+    padding: 0px 0px 15px 10px;
+}
+
+.content{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+.content .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+    cursor: pointer;
+    transition:  all 0.4s;
+    margin-bottom: 20px;
+}
+.content .box:hover{
+    box-shadow: 3px 3px 12px 6px #ccc;
+    border: 2px solid transparent;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+
+}
+.content .box::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right:calc(100% + 23px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid white;
+ 
+}
+/* 
+.box h5{
+    position: relative;
+    color: #11a372;
+}
+.box h4{
+    font-size: 20px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: #444;
+}
+.box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 16px;
+} */
+
+.coll-Name{
+    display: flex;
+}
+.coll-Name h5{
+    font-size: 18px;
+   color: chocolate;
+}
+.coll-Name span a{
+    text-decoration: none;
+    
+}
+
+.position{
+    display: flex;
+}
+.position h5{
+    font-size: 18px;
+    color: chocolate;
+}
+.date{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-flow: column;
+}
+.date a{
+    text-decoration: none;
+}
+
+.detail{
+    font-size: 15px;
+}
+
+
+
+
+
+@media (max-width:768px){
+    .container .row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:767px) and (max-width:992.99px) {
+    .content{
+        padding: 0px 0px 0px 30px;
+        border-left: 2px solid #bababa;
+    }
+    .content .box{
+        position: relative;
+        padding: 8px;
+        border: 1px solid #eaeaea;
+        background-color: #fcfcfc;
+        cursor: pointer;
+        transition:  all 0.4s;
+        margin-bottom: 20px;
+    }
+    .coll-Name h5{
+        font-size: 20px;
+       color: chocolate;
+    }
+}

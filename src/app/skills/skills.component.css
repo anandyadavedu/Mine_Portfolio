@@ -1,0 +1,514 @@
+.container-fluid{
+    margin-bottom: 3rem !important;
+}
+
+
+
+.container{
+    margin-top: 55px;
+    /* background: green; */
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    /* background-color: lightseagreen; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    background: #5de3df;
+    /* text-shadow: 2px 1px rgb(67, 66, 67); */
+}
+.header::after{
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 5px;
+    bottom: 0px;
+    background: #e30606;
+    -webkit-animation: title 5s infinite linear;
+    animation: title 5s infinite linear;
+}
+.header p{
+    margin-bottom: 5px;
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-shadow: 2px 3px black;
+}
+.container-fluid h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+}
+.title-name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: transparent; */
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+
+}
+
+.title-name::after{
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 5px;
+    bottom: 0px;
+    margin-top: 10px;
+    background: #e30606;
+    -webkit-animation: title 5s infinite linear;
+    animation: title 5s infinite linear;
+}
+.title-name h2{
+    color: #32a372;
+    font-size: 32px;
+    font-weight: 500;
+
+}
+.skill-bar{
+    margin-bottom: 1.3rem;
+}
+.skill-bar .info{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+   margin-bottom: -25px;
+   font-size: 20px;
+   font-weight: 500;
+}
+.skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.skill-bar span{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: rgb(6, 248, 248);
+    border-radius: 25px;
+    box-shadow: rgb(3, 107, 96);
+}
+.skill-bar .bar .HTML{
+    width: 90%;
+    animation: HTML 6s infinite ease-in-out  normal forwards;
+}
+.skill-bar .bar .CSS{
+    width: 90%;
+    animation: CSS 6s ease-in-out infinite normal forwards;
+}
+.skill-bar .bar .angular{
+    width: 90%;
+    animation: angular 6s ease-in-out infinite  normal forwards;
+}
+.skill-bar .bar .react-js{
+    width: 75%;
+    animation: react-js 6s ease-in-out  infinite  normal forwards;
+}
+.skill-bar .bar .javascript{
+    width: 80%;
+    animation: javascript 6s ease-in-out infinite normal forwards;
+}
+.skill-bar .bar .java{
+    width: 90%;
+    animation: java 6s  ease-in-out infinite  normal forwards;
+}
+.skill-bar .bar .c {
+    width: 75%;
+    animation: c 6s ease-in-out infinite  normal forwards;
+}
+.skill-bar .bar .python{
+    width: 65%;
+    animation: python 6s ease-in-out infinite normal forwards;
+}
+.skill-bar .bar .bootstrap{
+    width: 85%;
+    animation: bootstrap 6s ease-in-out infinite  normal forwards;
+}
+.skill-bar .bar .typescript{
+    width: 80%;
+    animation: typescript 6s ease-in-out infinite normal forwards;
+}
+.skill-bar .bar .aspcore {
+    width: 85%;
+    animation: aspcore 6s ease-in-out infinite normal forwards;
+}
+.skill-bar .bar .sql{
+    width: 80%;
+    animation: sql 6s  ease-in-out infinite normal forwards;
+}
+
+
+/* <<<<<<<<<<<<<<<<<------------ Cicle css Property ------------------>>>>>>>>>>>>>>>>>>>>  */
+
+
+/* .box{
+    margin: 10px 0;
+    flex: 1 1 15rem;
+    position: relative;
+}
+.box .text{
+    text-align: center;
+    color: blue;
+    font-size: 1rem;
+}
+.box .text h4{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+/* .circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d00a0a;
+} */
+
+/* .circle .points{
+    width: 5px;
+    height: 10px;
+    background-color: #2b1383;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+   
+}
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+
+}  */
+
+
+.circle-wrap {
+    position: relative;
+    margin: 15px auto 50px auto;
+    width: 150px;
+    height: 150px;
+    background: #e8e4e4;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle1 .mask,
+.circle-wrap .circle1 .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circle1 .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+.circle-wrap .circle1 .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #9e00b1;
+}
+.circle-wrap .circle1 .mask.full,
+.circle-wrap .circle1 .fill {
+    animation: circle1 5s ease-in-out infinite normal forwards;
+    transform: rotate(156deg);
+
+}
+
+
+
+
+
+.circle-wrap .circle2 .mask,
+.circle-wrap .circle2 .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circle2 .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+.circle-wrap .circle2 .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #9e00b1;
+}
+.circle-wrap .circle2 .mask.full,
+.circle-wrap .circle2 .fill {
+    animation: circle2 5s ease-in-out infinite normal forwards;
+    transform: rotate(160deg);
+
+}
+
+
+
+.circle-wrap .circle3 .mask,
+.circle-wrap .circle3 .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circle3 .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+.circle-wrap .circle3 .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #9e00b1;
+}
+.circle-wrap .circle3 .mask.full,
+.circle-wrap .circle3 .fill {
+    animation: circle3  5s ease-in-out infinite  normal forwards;
+    transform: rotate(135deg);
+
+}
+
+
+
+.circle-wrap .circle4 .mask,
+.circle-wrap .circle4 .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-wrap .circle4 .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+.circle-wrap .circle4 .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #9e00b1;
+}
+.circle-wrap .circle4 .mask.full,
+.circle-wrap .circle4 .fill {
+    animation: circle4 5s ease-in-out infinite normal forwards;
+    transform: rotate(126deg);
+
+}
+
+
+
+
+.circle-wrap .inside-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fcfcfc;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+
+
+}
+.circle-wrap .title small{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 27px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<-------------------- Skills Bar Animation Start ----------------->>>>>>>>>>>>>  */
+
+@keyframes HTML{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes CSS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes angular{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes react-js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+   
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes typescript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes aspcore{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes glow{
+    0%{
+        background: green;
+        box-shadow: none;
+    }
+    100%{
+        background: mediumaquamarine;
+        box-shadow: grey;
+    }
+}
+
+
+/* <<<<<<<<<<<<<<<<-------------------- Skills Bar Animation ----------------->>>>>>>>>>>>>  */
+
+
+
+/* <<<<<<<<-------Circle CSS animation start ------------>>>>>>>>>>>>  */
+
+
+@keyframes circle1{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(156deg);
+    }
+}
+@keyframes circle2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(160deg);
+    }
+}
+
+@keyframes circle3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+}
+
+@keyframes circle4 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(126deg);
+    }
+}
+
+/* <<<<<<<<-------Circle CSS animation end ------------>>>>>>>>>>>>  */
+

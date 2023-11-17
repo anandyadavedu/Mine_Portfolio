@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+ </button>
+    <div class="container-fluid">
+       <a class="navbar-brand" id="name" routerLink="/home">Er. Anand <span id="yadav">Yadav</span></a>
+   
+      <div class=" navbar-collapse collapse " [ngClass]="{'collapse': isNavbarCollapsed}" id="navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/home" routerLinkActive="active"  (click)="closeNavbar()" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/about" routerLinkActive="active"  (click)="closeNavbar()" >About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="skills" routerLinkActive="active" (click)="closeNavbar()" >Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"routerLink="projects" routerLinkActive="active"  (click)="closeNavbar()" >Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="contact" routerLinkActive="active"  (click)="closeNavbar()" >Contact</a>
+                </li>
+
+            </ul>
+       </div>
+  </div>
+</nav>
+
+<div class="router">
+  
+  <router-outlet></router-outlet>
+
+</div>
+
+
+
