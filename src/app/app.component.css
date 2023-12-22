@@ -60,7 +60,7 @@
 .nav-link:hover{
     background-color: rgb(3, 248, 248);
     transform: rotateY(180deg);
-    transform: scaleX(1.2);
+    transform: scaleY(1.1);
     border-radius: 20px;
 
 }
@@ -72,7 +72,7 @@ li a.active{
 
 }
 .navbar-brand{
-    animation: brand-name 2s infinite;
+    animation: brand-name 2s ease-in-out infinite;
 }
 
 .router{
@@ -95,6 +95,10 @@ li a.active{
       position: absolute;
       top: 0;
       right: 0;
+    }
+    .navbar-nav{
+        background: black;
+        width: 120%;
     }
 
 }

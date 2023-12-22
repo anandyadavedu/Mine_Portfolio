@@ -41,6 +41,7 @@
     /* color: chocolate; */
     text-size-adjust: 0.58;
     text-shadow: 2px 3px rgb(255, 8, 8);
+    
     opacity: 0;
     animation: showWord 2s ease 2s infinite;
   }
@@ -61,7 +62,7 @@
 
 }
 .Footer-Yadav{
-  color: aqua;
+  color: chocolate;
 }
 .image h3{
   color: aliceblue;
@@ -131,25 +132,12 @@
 
 .brand-name{
   animation: footer-brand 2s infinite;
+  display: grid;
 }
 
 
 
 
-
-
-@media(max-width:768px){
-  .name{
-    margin-top: 20px;
-  }
-  .word-container{
-    font-size: 26px;
-  }
-  .name p{
-    font-size: 14px;
-  }
-
-}
 @media (min-width:767.99px) and (max-width:991.99px){
   .main .image img {
     width: 110px;
@@ -186,8 +174,7 @@
   }
 
 }
-
-@media(max-width:650px){
+@media (min-width:420.99px) and (max-width:767.90px){
   .footer-page{
     padding: 0px 0px;
   }
@@ -196,6 +183,31 @@
     height: 90px;
    
   }
+  .image h3{
+    font-size: 14px;
+  }
+  .quick-link h4, .connect-us h4{
+    font-size: 14px;
+  }
+
+  .footer-link{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    font-size: 16px;
+    margin-left: 0px;
+  }
+  .icon-link{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 0px;
+  }
+  .social-media .footer-icons{
+    padding: 0px 0px;
+  }
+
+
   .social-link{
     margin-left: 0px;
   }
@@ -205,7 +217,81 @@
   .fa-brands{
     font-size: 32px;
   }
+  .name{
+    margin-top: 20px;
+  }
+  .word-container{
+    font-size: 26px;
+  }
+  .name p{
+    font-size: 14px;
+  }
+
 }
+
+@media (min-width:200px) and (max-width:420.99px){
+  .footer-page{
+    padding: 0px 0px;
+  }
+  .main .image img{
+    width: 60px;
+    height: 60px;
+   
+  }
+  .image h3{
+    font-size: 10px;
+  }
+  .quick-link h4, .connect-us h4{
+    font-size: 10px;
+  }
+
+  .footer-link{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    font-size: 12px;
+    margin-left: 0px;
+  }
+  .icon-link{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 0px;
+  }
+  .social-media .footer-icons{
+    padding: 0px 0px;
+  }
+  .social-media .heading{
+    background-color: #dedcdc;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+
+
+  .social-link{
+    margin-left: 0px;
+  }
+  .footer-contact p{
+    font-size: 8px;
+  }
+  .icons .icon-link .fa-brands{
+    font-size: 35px;
+  }
+   .footer-icons .icon-link .fa-brands{
+    font-size: 25px;
+  }
+  .name{
+    margin-top: 20px;
+  }
+  .word-container{
+    font-size: 26px;
+  }
+  .name p{
+    font-size: 14px;
+  }
+}
+
 
 
 

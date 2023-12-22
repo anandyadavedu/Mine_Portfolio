@@ -122,15 +122,26 @@ section{
     border-radius: 4px;
   }
   
-  .icon-link:hover .icon-name {
+.icon-link:hover .icon-name {
     display: block;
-  }
+}
 
-
-
-  .error-message{
+.error-message{
     color: red;
-  }
+}
+
+
+@media (max-width:768px) and (min-width:470px){
+    .heading{
+        background-color: #dedcdc;
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+    .icon-link{
+        margin: 5px;
+    }
+}
 
 
 

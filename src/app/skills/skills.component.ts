@@ -6,29 +6,7 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  // dots:any;
-
-  // constructor(){
-  //   const circles=document.querySelectorAll('.circle');
-  //   circles.forEach(elem=>{
-  //     var dots:any=elem.getAttribute("data-dots");
-  //     var marked:any= elem.getAttribute("data-percent");
-  //     var percent:any=Math.floor(dots*marked/100);
-  //     var points:any="";
-  //     var rotate=360/dots;
-
-  //     for(let i=0; i<dots;i++){
-  //       points+= '<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>';
-  //     }
-  //     elem.innerHTML=points;
-
-  //     const pointsMarked=elem.querySelectorAll('.points');
-  //     for(let i=0;i<percent;i++){
-  //       pointsMarked[i].classList.add('marked');
-  //     }
-  //   })
-
-  // }
+  
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
